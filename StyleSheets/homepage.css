@@ -1,3 +1,15 @@
-body{
+.navbar{
     background-color: black;
+}
+
+.navbar .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar .navbar-nav > li > a:hover {
+    background-color: grey;
+}
+
+.active{
+    color: red;
 }
