@@ -1,0 +1,33 @@
+.navbar{
+    background-color: black;
+
+}
+
+.navbar-brand{
+    font-size: 150%;
+}
+
+.navbar .navbar-nav > li > a {
+    color: white;
+    font-size: 200%;
+    height: 80px;
+    line-height: 40px;
+    width: 150px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+.navbar .navbar-nav > li > a:hover {
+    background-color: grey;
+
+}
+
+.active{
+    background-color: #383838;
+}
+
+.logo{
+  margin-right: 10px;
+  width: 15ex;
+  height: auto;
+}
