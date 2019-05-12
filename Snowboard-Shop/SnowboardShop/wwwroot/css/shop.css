@@ -1,3 +1,17 @@
 ﻿.row-fluid {
     margin-top: 5rem;
 }
+
+body {
+    background-color: black;
+}
+
+.card-body {
+    text-align: center;
+    color: white;
+}
+
+.card-columns-fluid{
+    border-right-width: 20px;
+    border: 1px solid white;
+}
