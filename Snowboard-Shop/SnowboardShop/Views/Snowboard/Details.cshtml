@@ -7,27 +7,51 @@
 
 <link rel="stylesheet" href="~/css/details.css" />
 
-<div class="col-sm-4" style="margin-bottom: 5rem">
-    <div class="card-columns-fluid">
-        <div class="card card-block d-flex" style="width: 23rem; white-space:nowrap">
-            <img class="card-img-bottom" src="~/images/@Model.ImagePath" alt="@Model.Name">
-            <div class="card-body align-items-center" align="right">
-                <h1 class="card-text">@Model.Name</h1>
-                <h3 class ="type">Price:</h3>
-                <h4 class="card-title">$@Model.Price</h4>
-                <h3 class = "type">Description:</h3>
-                <h4 class="card-title">@Model.Description</h4>
-                <h3 class = "type">Profile:</h3>
-                <h4 class="card-title">@Model.Profile</h4>
-                <h3 class = "type">Flex rating:</h3>
-                <h4 class="card-title">@Model.Flex</h4>
-                <h3 class = "type">Size:</h3>
-                <h4 class="card-title">@Model.Size cm</h4>
-                <h3 class = "type">Brand:</h3>
-                <h4 class="card-title">@Model.BrandName</h4>
-
-                <a asp-route-id="@Model.Id" asp-area="" asp-action="AddToCart" asp-controller="Cart" class="btn btn-primary btn-lg" role="button">Add to cart</a>
-            </div>
-        </div>
+<div class="card-columns-fluid">
+    <div class="card card-block d-flex">
+        <img class="card-img-bottom" src="~/images/@Model.ImagePath" alt="@Model.Name">
     </div>
+
 </div>
+
+<div class="details">
+    <h1 class="title">@Model.Name</h1>
+    <table class="detailsBody">
+        <tr>
+            <th class="type">Price: </th>
+            <td class="value">$@Model.Price</td>
+        </tr>
+
+        <tr>
+            <th class="type description" colspan="2"><button data-toggle="collapse" data-target="#demo">Description</button></th>
+        </tr>
+
+        <tr id="demo" class="collapse">
+            <td>
+            Lorem ipsum dolor text
+            </td>
+        </tr>
+
+        <tr>
+            <th class="type">Profile: </th>
+            <td class="value">@Model.Profile</td>
+        </tr>
+
+        <tr>
+            <th class="type">Flex rating: </th>
+            <td class="value">@Model.Flex</td>
+        </tr>
+
+        <tr>
+            <th class="type">Size: </th>
+            <td class="value">@Model.Size cm</td>
+        </tr>
+
+        <tr>
+            <th class="type">Brand: </th>
+            <td class="value">@Model.BrandName</td>
+        </tr>
+
+    </table>
+</div>
+<a asp-route-id="@Model.Id" asp-area="" asp-action="AddToCart" asp-controller="Cart" class="btn btn-primary btn-lg" role="button">Add to cart</a>

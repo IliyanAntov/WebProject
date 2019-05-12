@@ -2,25 +2,53 @@
     background-color: black;
 }
 
-.card-body {
-    text-align: center;
-    color: #c8c8c8;
-}
-
 .card-img-bottom {
     display: block;
-    width: 200%;
-    height: 35vw;
-    object-fit: cover;
-    margin-right: 10rem;
+    height: 800px;
     float: left;
+    margin-right: -150px;
+}
+
+.details {
+    display: block;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.detailsBody {
+    width: 50%;
+    margin-left: 40%;
+    align-content: center;
+    border: 1px solid white;
+}
+
+.title {
+    font-size: 300%;
+    text-decoration: underline;
+    margin-bottom: 100px;
+}
+
+.detailsBody{
+    line-height: 80px;
 }
 
 .type {
+    color: #c8c8c8;
+    text-align: center;
+    font-size: 200%;
     margin-top: 30px;
+    border: 1px solid white;
+    /*float: left;*/
 }
 
-.card-text {
-    font-size: 300%;
-    text-decoration: underline;
+
+.value {
+    color: #c8c8c8;
+    font-size: 200%;
+    border: 1px solid white;
+    /*float: right;*/
+}
+
+.description {
 }
