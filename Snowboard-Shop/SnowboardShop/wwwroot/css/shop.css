@@ -1,5 +1,5 @@
 ﻿.row-fluid {
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-left: -6rem;
 }
 
@@ -9,14 +9,22 @@ body {
 
 .card-body {
     text-align: center;
-    color: white;
-}
-
-.card-columns-fluid {
-    /*border: 1px solid white;*/
+    color: #c8c8c8;
 }
 
 .card {
+    padding-top: 15px;
+    padding-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.item, .item:hover, .item:active {
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.card:hover {
+    background-color: #1e1e1e;
 }
