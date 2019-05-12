@@ -1,0 +1,26 @@
+﻿body {
+    background-color: black;
+}
+
+.card-body {
+    text-align: center;
+    color: #c8c8c8;
+}
+
+.card-img-bottom {
+    display: block;
+    width: 200%;
+    height: 35vw;
+    object-fit: cover;
+    margin-right: 10rem;
+    float: left;
+}
+
+.type {
+    margin-top: 30px;
+}
+
+.card-text {
+    font-size: 300%;
+    text-decoration: underline;
+}
