@@ -20,16 +20,16 @@ namespace Tests {
         public void GetSingleProductViewModel() {
             var service = new Mock<ProductsService>(null);
 
-            var list = new List<ListProductViewModel>();
+            var list = new List<ListProductsViewModel>();
             list.Add(
-                new ListProductViewModel() {
+                new ListProductsViewModel() {
                     Id = 1,
                     Name = "test",
                     ImageName = "test.jpg",
                     Price = 1
                 });
             list.Add(
-                new ListProductViewModel() {
+                new ListProductsViewModel() {
                     Id = 2,
                     Name = "test2",
                     ImageName = "test2.jpg",

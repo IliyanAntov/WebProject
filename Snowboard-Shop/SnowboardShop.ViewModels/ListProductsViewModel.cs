@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace SnowboardShop.ViewModels {
-    public class ListProductViewModel {
+    public class ListProductsViewModel {
 
         public int Id { get; set; }
 

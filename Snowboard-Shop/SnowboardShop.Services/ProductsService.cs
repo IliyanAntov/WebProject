@@ -27,7 +27,7 @@ namespace SnowboardShop.Services {
         /// Maps all products to ListProductViewModel, which contains their Id, Name, ImageName and Price
         /// </summary>
         /// <returns>A list of ListProductViewModel, containing info about all products</returns>
-        public List<ListProductViewModel> GetAllProductsViewModel() {
+        public List<ListProductsViewModel> GetAllProductsViewModel() {
             var snowboards = GetSingleProductViewModel(new List<Product>(this.context.Snowboards));
             var bindings = GetSingleProductViewModel(new List<Product>(this.context.Bindings));
             var boots = GetSingleProductViewModel(new List<Product>(this.context.Boots));
@@ -42,10 +42,10 @@ namespace SnowboardShop.Services {
         /// </summary>
         /// <param name="products">Products to map</param>
         /// <returns>A list of ListProductViewModel, containing info about all products of a certain type</returns>
-        private List<ListProductViewModel> GetSingleProductViewModel(List<Product> products) {
+        private List<ListProductsViewModel> GetSingleProductViewModel(List<Product> products) {
             return products
                 .Select(b =>
-                    new ListProductViewModel {
+                    new ListProductsViewModel {
                         Id = b.Id,
                         Name = b.Name,
                         ImageName = Path.GetFileName(b.ImagePath),

@@ -7,6 +7,7 @@ using SnowboardShop.Services.Contracts;
 using SnowboardShop.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
@@ -82,6 +83,7 @@ namespace SnowboardShop.Services {
                 .Select(i => new ShoppingCartItemViewModel() {
                     Id = i.Id,
                     Name = i.Product.Name,
+                    ImageName = Path.GetFileName(i.Product.ImagePath),
                     Quantity = i.Quantity,
                     Price = Math.Round(i.Product.Price, 2)
                 }).ToList();
