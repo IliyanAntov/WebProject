@@ -61,7 +61,10 @@
 }
 
 .collapse td{
-    transition: height .5s;
     height: 0;
     overflow: hidden;
+}
+
+.descriptionContent {
+    border: hidden;
 }
