@@ -17,9 +17,15 @@
 }
 
 .detailsBody {
-    width: 50%;
-    margin-left: 40%;
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    /*margin-left: 40%;*/
     align-content: center;
+    border: 1px solid white;
+}
+
+.detailsBody tr{
     border: 1px solid white;
 }
 
@@ -35,20 +41,28 @@
 
 .type {
     color: #c8c8c8;
-    text-align: center;
+    text-align: left;
     font-size: 200%;
-    margin-top: 30px;
-    border: 1px solid white;
-    /*float: left;*/
+    padding-left: 10%;
+    /*border: 1px solid white;*/
 }
 
 
 .value {
     color: #c8c8c8;
     font-size: 200%;
-    border: 1px solid white;
-    /*float: right;*/
+    float: right;
+    padding-right: 10%;
 }
 
 .description {
+    color: #c8c8c8;
+    font-size: 200%;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.description:hover {
+    background-color: dimgray;
 }
