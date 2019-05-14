@@ -6,7 +6,6 @@
     display: block;
     height: 800px;
     float: left;
-    margin-right: -150px;
 }
 
 .details {
@@ -18,10 +17,9 @@
 
 .detailsBody {
     width: 40%;
-    float: right;
-    margin-right: 10%;
-    /*margin-left: 40%;*/
     align-content: center;
+    margin: 0 auto;
+    line-height: 80px;
     border: 1px solid white;
 }
 
@@ -32,11 +30,7 @@
 .title {
     font-size: 300%;
     text-decoration: underline;
-    margin-bottom: 100px;
-}
-
-.detailsBody{
-    line-height: 80px;
+    margin-bottom: 80px;
 }
 
 .type {
@@ -47,16 +41,15 @@
     /*border: 1px solid white;*/
 }
 
-
 .value {
-    color: #c8c8c8;
+    color: white;
     font-size: 200%;
     float: right;
     padding-right: 10%;
 }
 
 .description {
-    color: #c8c8c8;
+    color: white;
     font-size: 200%;
     text-align: center;
     user-select: none;
@@ -65,4 +58,10 @@
 
 .description:hover {
     background-color: dimgray;
+}
+
+.collapse td{
+    transition: height .5s;
+    height: 0;
+    overflow: hidden;
 }
