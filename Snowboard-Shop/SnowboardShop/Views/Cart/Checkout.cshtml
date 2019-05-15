@@ -4,12 +4,14 @@
     ViewData["Title"] = "Checkout";
 }
 
+<link rel="stylesheet" href="~/css/checkout.css" />
+
 <h1>Checkout</h1>
 
 <hr />
 
 <div class="row">
-    <div class="col-md-4">
+    <div >
         <form asp-action="Checkout">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -45,15 +47,12 @@
                 <input type="hidden" asp-for="Username" class="form-control" />
                 <span asp-validation-for="Username" class="text-danger"></span>
             </div>
-            <h1>$@Model.TotalPrice</h1>
-            <div class="form-group">
-                <input type="submit" value="Confirm" class="btn btn-lg btn-primary" />
-            </div>
+            <h1>Total: $@Model.TotalPrice</h1>
+            <input type="submit" value="Confirm" class="confirmButton" />
+            <a asp-action="Cart" class="backToCart">Back to Cart</a>
         </form>
+
     </div>
-</div>
-<div>
-    <a asp-action="Cart">Back to Cart</a>
 </div>
 
 @section Scripts {

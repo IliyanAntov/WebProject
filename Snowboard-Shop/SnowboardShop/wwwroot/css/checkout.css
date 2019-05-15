@@ -1,0 +1,41 @@
+﻿body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.row form {
+    position: absolute;
+    left: 36%; 
+    width: 28%;
+    color: #e6e6e6;
+    font-size: 150%;
+}
+
+.form-group input {
+    display: block;
+    margin: 0 auto;
+}
+
+.confirmButton {
+    float: right;
+    border: 0;
+    padding: 20px;
+    color: #e6e6e6;
+    background-color: #3d175e;
+    border-radius: 4px;
+}
+
+.confirmButton:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.backToCart{
+    margin-top: 4%;
+    float: left;
+}
