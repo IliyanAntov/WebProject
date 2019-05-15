@@ -28,3 +28,7 @@ body {
 .card:hover {
     background-color: #1e1e1e;
 }
+
+h2{
+    color: white;
+}
