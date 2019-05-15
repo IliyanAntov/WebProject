@@ -19,17 +19,18 @@
     width: 40%;
     align-content: center;
     margin: 0 auto;
+    margin-bottom: 50px;
     line-height: 80px;
-    border: 1px solid white;
+    border: 1px solid #c8c8c8;
 }
 
-.detailsBody tr{
-    border: 1px solid white;
+.detailsBody tr {
+    border: 1px solid #c8c8c8;
 }
 
 .title {
     font-size: 300%;
-    text-decoration: underline;
+
     margin-bottom: 80px;
 }
 
@@ -37,8 +38,7 @@
     color: #c8c8c8;
     text-align: left;
     font-size: 200%;
-    padding-left: 10%;
-    /*border: 1px solid white;*/
+    padding-left: 5%;
 }
 
 .value {
@@ -49,7 +49,7 @@
 }
 
 .description {
-    color: white;
+    color: #c8c8c8;
     font-size: 200%;
     text-align: center;
     user-select: none;
@@ -57,14 +57,26 @@
 }
 
 .description:hover {
-    background-color: dimgray;
+    background-color: #282828;
+    color: white;
 }
 
-.collapse td{
-    height: 0;
-    overflow: hidden;
-}
-
-.descriptionContent {
+#descriptionContent {
+    font-size: 200%;
     border: hidden;
+    background-color: #282828;
+    border: none;
+}
+
+.addToCart {
+    font-size: 200%;
+    padding: 20px;
+    color: #e6e6e6;
+    background-color: #3d175e;
+    border-radius: 4px;
+}
+
+.addToCart:hover {
+    text-decoration: none;
+    color: white;
 }
