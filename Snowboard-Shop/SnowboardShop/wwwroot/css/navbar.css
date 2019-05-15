@@ -32,7 +32,6 @@
 
 .navbar-nav .nav-item a{
     font-size: 200%;
-    /*height: 80px;*/
     line-height: 50px;
     width: 150px;
     text-align: center;
@@ -49,7 +48,6 @@
 .navbar .navbar-nav li a:hover, .navbar-nav li button:hover {
     text-decoration: none;
     color: white;
-    /*background-color: black;*/
 }
 
 .navbar .navbar-nav  li  a:focus {

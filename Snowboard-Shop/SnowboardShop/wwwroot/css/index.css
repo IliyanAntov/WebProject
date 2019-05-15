@@ -2,19 +2,6 @@ body{
     background-color: black;
 }
 
-/*.main{
-    width: 60%;
-    display: block;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    position: absolute;
-    animation-name: move;
-    animation-duration: 3s;
-}*/
-
-
 .bigLogo {
     position: relative;
 }
@@ -84,16 +71,5 @@ body{
     }
 }
 
-@keyframes flipAround {
-    from {
-        transform-origin: center;
-        transform: rotateY('0deg')
-    }
-
-    to {
-        transform-origin: center;
-        transform: rotateY('360deg')
-    }
-}
 
 
