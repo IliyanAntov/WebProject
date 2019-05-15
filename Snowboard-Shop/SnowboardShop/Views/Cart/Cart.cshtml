@@ -30,14 +30,16 @@
             </tbody>
         }
     </table>
-    <h1>Grand total: $@Model.Items.Sum(m => m.Price * m.Quantity)</h1>
-    <a asp-route-id="@Model.CartId" asp-area="" asp-action="Checkout" asp-controller="Cart" class="btn btn-lg btn-primary" role="button">Checkout</a>
+    <div class="checkout">
+        <h1 class="grandTotal">Grand total: $@Model.Items.Sum(m => m.Price * m.Quantity)</h1>
+        <a asp-route-id="@Model.CartId" asp-area="" asp-action="Checkout" asp-controller="Cart" class="checkoutButton" role="button">Checkout</a>
+    </div>
 }
 else {
     <div> 
         <img class="emptyCart" src="~/images/EmptyCart.png" />
     </div>
     <div class="yourCartIsEmptyDiv">
-        <h1>Your cart is empty!</h1>
+        <h1 class="yourCartIsEmpty">Your cart is empty!</h1>
     </div>
 }

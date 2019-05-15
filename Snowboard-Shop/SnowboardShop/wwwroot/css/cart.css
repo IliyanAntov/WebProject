@@ -38,9 +38,8 @@
     padding: 5px;
 }
 
-h1{
-    color: white;
-    float: right;
+.yourCartIsEmpty {
+    color: #d22133;
 }
 
 .redCross {
@@ -65,4 +64,31 @@ h1{
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+}
+
+.checkout {
+    float: right;
+    position: absolute;
+    top: 14%;
+    right: 40px;
+    text-align: center;
+}
+
+.grandTotal {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.checkoutButton {
+    font-size: 200%;
+    padding: 20px;
+    color: #e6e6e6;
+    background-color: #3d175e;
+    border-radius: 4px;
+}
+
+.checkoutButton:hover {
+    text-decoration: none;
+    color: white;
 }
