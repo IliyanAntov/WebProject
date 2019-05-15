@@ -29,6 +29,10 @@ namespace SnowboardShop.Controllers
             this.cartsService = cartsService;
         }
 
+        public IActionResult OrderPlaced() {
+            return View();
+        }
+
         /// <summary>
         /// Adds an item to the cart and returns the shop view
         /// </summary>
@@ -87,7 +91,7 @@ namespace SnowboardShop.Controllers
         public IActionResult Checkout(string firstName, string lastName, string phoneNumber, string city, string address, int shoppingCartId, string username) {
 
             cartsService.PlaceOrder(firstName, lastName, phoneNumber, city, address, shoppingCartId, username);
-            return RedirectToAction("Cart", "Cart");
+            return RedirectToAction("OrderPlaced", "Cart");
         }
 
         /// <summary>

@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnowboardShop.Services", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnowboardShop.ViewModels", "SnowboardShop.ViewModels\SnowboardShop.ViewModels.csproj", "{32A2DACB-5ACE-4676-BC08-8339A37B3CD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnowboardShop.Tests", "SnowboardShop.Tests\SnowboardShop.Tests.csproj", "{32E83B24-D69C-4389-8020-101230AA2715}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnowboardShop.Tests", "SnowboardShop.Tests\SnowboardShop.Tests.csproj", "{32E83B24-D69C-4389-8020-101230AA2715}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

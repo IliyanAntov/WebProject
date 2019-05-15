@@ -1,0 +1,12 @@
+﻿body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 400%;
+    color: white;
+    position: fixed;
+    top: 45%;
+    left: 43%;
+}
