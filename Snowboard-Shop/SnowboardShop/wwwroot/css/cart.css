@@ -1,0 +1,68 @@
+﻿body {
+    background-color: black;
+}
+
+
+.cartTable {
+    float: left;
+    width: 80%;
+    color: white;
+    border: 1px solid white;
+    font-family: 'Anton', sans-serif;
+}
+
+.itemRows {
+    line-height: 800%;
+}
+
+.cartTable th {
+    font-size: 200%;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid white;
+}
+
+.cartTable td {
+    width: 50%;
+    font-size: 100%;
+    text-align: center;
+    font-size: 200%;
+    border: 1px solid white;
+}
+
+.picture {
+    width: 30%;
+    padding: 5px;
+}
+
+h1{
+    color: white;
+    float: right;
+}
+
+.redCross {
+    vertical-align: central;
+    width: 30%;
+}
+
+.emptyCart {
+    position: absolute;
+    margin: auto;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.yourCartIsEmptyDiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
